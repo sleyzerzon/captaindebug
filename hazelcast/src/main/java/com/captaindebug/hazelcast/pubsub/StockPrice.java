@@ -73,7 +73,7 @@ public class StockPrice implements Serializable {
 		sb.append(" - Ask: ");
 		sb.append(ask);
 		sb.append(" - ");
-		SimpleDateFormat df = new SimpleDateFormat("HH:MM:SS");
+		SimpleDateFormat df = new SimpleDateFormat("HH:MM:ss.SS");
 		sb.append(df.format(new Date(timestamp)));
 		return sb.toString();
 	}

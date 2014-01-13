@@ -61,7 +61,7 @@ public class MarketMaker implements Runnable {
 	private void publish() {
 
 		StockPrice price = createStockPrice();
-		System.out.println(price.toString());
+		System.out.println("Published: "+price.toString());
 		topic.publish(price);
 	}
 
